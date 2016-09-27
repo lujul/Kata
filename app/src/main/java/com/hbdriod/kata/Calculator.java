@@ -11,22 +11,16 @@ public class Calculator {
 
     //Method who makes a sum of an input String value
     public int add(String string) {
+        int sum = 0;
         if (string.equals("")) {
-            return 0;
+            return sum;
         } else {
             StringTokenizer stringTokenizer = new StringTokenizer(string,",");
-            if (stringTokenizer.countTokens()==1){
-                return Integer.parseInt(stringTokenizer.nextElement().toString());
-            }else{
-                return Integer.parseInt(stringTokenizer.nextElement().toString())+Integer.parseInt(stringTokenizer.nextElement().toString());
-
-
+            while (stringTokenizer.hasMoreTokens()) {
+                String token = stringTokenizer.nextToken();
+                sum = sum + Integer.parseInt(token.toString());
             }
-
+            return sum;
         }
-
-
     }
-
-
 }

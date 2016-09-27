@@ -27,4 +27,9 @@ public class ExampleUnitTest {
         Calculator calculator = new Calculator();
         assertEquals(calculator.add("1,2"),3);
     }
+    @Test
+    public void ShouldReturnSumWhenTheValueIsANumbersWithSepated() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.add("1,2,3"),6);
+    }
 }
