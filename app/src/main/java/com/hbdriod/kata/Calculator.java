@@ -15,11 +15,25 @@ public class Calculator {
         if (string.equals("")) {
             return sum;
         } else {
-            StringTokenizer stringTokenizer = new StringTokenizer(string,",\n");
-            while (stringTokenizer.hasMoreTokens()) {
-                String token = stringTokenizer.nextToken();
-                sum = sum + Integer.parseInt(token.toString());
+            if(string.charAt(0)=='/'){
+
+                StringTokenizer stringTokenizer = new StringTokenizer(string,String.valueOf(string.charAt(2))+"\n");
+
+                while (stringTokenizer.hasMoreTokens()) {
+                    String token = stringTokenizer.nextToken();
+                    if(!token.equals("//")){
+                    sum = sum + Integer.parseInt(token.toString());}
+                }
+
+            }else{
+                StringTokenizer stringTokenizer = new StringTokenizer(string,",\n");
+                while (stringTokenizer.hasMoreTokens()) {
+                    String token = stringTokenizer.nextToken();
+                    sum = sum + Integer.parseInt(token.toString());
+                }
+
             }
+
             return sum;
         }
     }
