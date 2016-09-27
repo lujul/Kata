@@ -15,7 +15,7 @@ public class Calculator {
         if (string.equals("")) {
             return sum;
         } else {
-            StringTokenizer stringTokenizer = new StringTokenizer(string,",");
+            StringTokenizer stringTokenizer = new StringTokenizer(string,",\n");
             while (stringTokenizer.hasMoreTokens()) {
                 String token = stringTokenizer.nextToken();
                 sum = sum + Integer.parseInt(token.toString());
