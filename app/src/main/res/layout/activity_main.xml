@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="70dp"
-    android:background="@color/colorLightBlue"
+    android:background="@color/color_light_blue"
     tools:context="com.hbdriod.kata.MainActivity">
 
     <EditText
