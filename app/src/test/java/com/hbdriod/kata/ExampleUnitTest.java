@@ -17,4 +17,9 @@ public class ExampleUnitTest {
         Calculator calculator = new Calculator();
         assertEquals(calculator.add(""),0);
     }
+    @Test
+    public void ShouldReturnSameNumberWhenTheValueIsASimpleNumber() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.add("1"),1);
+    }
 }

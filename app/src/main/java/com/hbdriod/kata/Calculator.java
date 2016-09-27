@@ -7,16 +7,14 @@ package com.hbdriod.kata;
 public class Calculator {
 
 
-    public Calculator() {
-    }
-
     //Method who makes a sum of an input String value
-    public int add(String numbers) {
-        if (numbers.equals("")) {
+    public int add(String string) {
+        if (string.equals("")) {
             return 0;
         } else {
-            return -1;
+            return Integer.parseInt(string);
         }
+
 
     }
 
