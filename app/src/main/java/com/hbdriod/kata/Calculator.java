@@ -10,9 +10,9 @@ public class Calculator {
     public Calculator() {
     }
 
-    //Method who makes a sum of an input String value 
+    //Method who makes a sum of an input String value
     public int add(String numbers) {
-        if (numbers == "") {
+        if (numbers.equals("")) {
             return 0;
         } else {
             return -1;
