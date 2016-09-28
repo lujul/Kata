@@ -41,6 +41,6 @@ public class ExampleUnitTest {
     @Test
     public void ShouldReturnSumWhenTheValueIsANumbersWithChaoticDelimiters() throws Exception {
         Calculator calculator = new Calculator();
-        assertEquals(calculator.add("//;\n1;2"),3);
+        assertEquals(calculator.add("//,\n1,2"),3);
     }
 }

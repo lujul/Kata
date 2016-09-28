@@ -15,7 +15,7 @@ public class Calculator {
         if (string.equals("")) {
             return sum;
         } else {
-            if(string.charAt(0)=='/'){
+            if(string.charAt(0)=='/'&&string.charAt(1)=='/'){
 
                 StringTokenizer stringTokenizer = new StringTokenizer(string,String.valueOf(string.charAt(2))+"\n");
 
